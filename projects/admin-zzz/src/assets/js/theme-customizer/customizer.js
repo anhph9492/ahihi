@@ -71,34 +71,34 @@ $(document).ready(function() {
         var type = $(this).attr("data-attr");
 
         var boxed = "";
-        if($(".page-wrapper").hasClass("box-layout")){
+        if($(".pages-wrapper").hasClass("box-layout")){
             boxed = "box-layout";
         }
         switch (type) {
             case 'compact-sidebar':
             {
-                    $(".page-wrapper").attr("class", "page-wrapper compact-wrapper "+boxed);
-                    $(".page-body-wrapper").attr("class", "page-body-wrapper sidebar-icon");
-                    localStorage.setItem('page-wrapper', 'compact-wrapper');
-                    localStorage.setItem('page-body-wrapper', 'sidebar-icon');
+                    $(".pages-wrapper").attr("class", "pages-wrapper compact-wrapper "+boxed);
+                    $(".pages-body-wrapper").attr("class", "pages-body-wrapper sidebar-icon");
+                    localStorage.setItem('pages-wrapper', 'compact-wrapper');
+                    localStorage.setItem('pages-body-wrapper', 'sidebar-icon');
                     break;
             }
             case 'normal-sidebar':
             {
-                $(".page-wrapper").attr("class", "page-wrapper horizontal-wrapper "+boxed);
-                $(".page-body-wrapper").attr("class", "page-body-wrapper horizontal-menu");
+                $(".pages-wrapper").attr("class", "pages-wrapper horizontal-wrapper "+boxed);
+                $(".pages-body-wrapper").attr("class", "pages-body-wrapper horizontal-menu");
                 $(".logo-wrapper").find('img').attr('src', '../assets/images/logo/logo.png');
-                localStorage.setItem('page-wrapper', 'horizontal-wrapper');
-                localStorage.setItem('page-body-wrapper', 'horizontal-menu');
+                localStorage.setItem('pages-wrapper', 'horizontal-wrapper');
+                localStorage.setItem('pages-body-wrapper', 'horizontal-menu');
                 break;
             }
             default:
             {
-                $(".page-wrapper").attr("class", "page-wrapper compact-wrapper "+boxed);
-                $(".page-body-wrapper").attr("class", "page-body-wrapper sidebar-icon");
+                $(".pages-wrapper").attr("class", "pages-wrapper compact-wrapper "+boxed);
+                $(".pages-body-wrapper").attr("class", "pages-body-wrapper sidebar-icon");
                 // $(".logo-wrapper").find('img').attr('src', '../assets/images/logo/compact-logo.png');
-                localStorage.setItem('page-wrapper', 'compact-wrapper');
-                localStorage.setItem('page-body-wrapper', 'sidebar-icon');
+                localStorage.setItem('pages-wrapper', 'compact-wrapper');
+                localStorage.setItem('pages-body-wrapper', 'sidebar-icon');
                 break;
             }
         }

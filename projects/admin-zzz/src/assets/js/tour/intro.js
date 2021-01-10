@@ -88,7 +88,7 @@
   }
 
   /**
-   * Initiate a new introduction/guide from an element in the page
+   * Initiate a new introduction/guide from an element in the pages
    *
    * @api private
    * @method _introForElement
@@ -109,7 +109,7 @@
 
         //use querySelector function only when developer used CSS selector
         if (typeof (currentItem.element) === 'string') {
-          //grab the element with given selector from the page
+          //grab the element with given selector from the pages
           currentItem.element = document.querySelector(currentItem.element);
         }
 
@@ -230,7 +230,7 @@
     //set it to the introJs object
     self._introItems = introItems;
 
-    //add overlay layer to the page
+    //add overlay layer to the pages
     if(_addOverlayLayer.call(self, targetElm)) {
       //then, start the show
       _nextStep.call(self);
@@ -376,7 +376,7 @@
     if (continueStep === false) {
       --this._currentStep;
       return false;
-    } 
+    }
 
     if ((this._introItems.length) <= this._currentStep) {
       //end of the intro
@@ -456,7 +456,7 @@
     var continueExit = true;
 
     // calling onbeforeexit callback
-    // 
+    //
     // If this callback return `false`, it would halt the process
     if (this._introBeforeExitCallback != undefined) {
       continueExit = this._introBeforeExitCallback.call(self);
@@ -466,7 +466,7 @@
     // otherwise, if `onbeforeexit` returned `false`, don't exit the intro
     if (!force && continueExit === false) return;
 
-    //remove overlay layers from the page
+    //remove overlay layers from the pages
     var overlayLayers = targetElement.querySelectorAll('.introjs-overlay');
 
     if (overlayLayers && overlayLayers.length > 0) {
@@ -532,7 +532,7 @@
   }
 
   /**
-   * Render tooltip box in the page
+   * Render tooltip box in the pages
    *
    * @api private
    * @method _placeTooltip
@@ -863,7 +863,7 @@
   }
 
   /**
-   * Show an element on the page
+   * Show an element on the pages
    *
    * @api private
    * @method _showElement
@@ -1338,7 +1338,7 @@
   }
 
   /**
-   * Get an element CSS property on the page
+   * Get an element CSS property on the pages
    * Thanks to JavaScript Kit: http://www.javascriptkit.com/dhtmltutors/dhtmlcascade4.shtml
    *
    * @api private
@@ -1422,7 +1422,7 @@
   }
 
   /**
-   * Add overlay layer to the page
+   * Add overlay layer to the pages
    *
    * @api private
    * @method _addOverlayLayer
@@ -1497,7 +1497,7 @@
         var currentItem = _cloneObject(this._options.hints[i]);
 
         if (typeof(currentItem.element) === 'string') {
-          //grab the element with given selector from the page
+          //grab the element with given selector from the pages
           currentItem.element = document.querySelector(currentItem.element);
         }
 
@@ -1637,7 +1637,7 @@
   };
 
   /**
-   * Removes all hint elements on the page
+   * Removes all hint elements on the pages
    * Useful when you want to destroy the elements and add them again (e.g. a modal or popup)
    *
    * @api private
@@ -1654,7 +1654,7 @@
   };
 
   /**
-   * Remove one single hint element from the page
+   * Remove one single hint element from the pages
    * Useful when you want to destroy the element and add them again (e.g. a modal or popup)
    * Use removeHints if you want to remove all elements.
    *
@@ -1670,7 +1670,7 @@
   };
 
   /**
-   * Add all available hints to the page
+   * Add all available hints to the pages
    *
    * @api private
    * @method _addHints
@@ -1881,7 +1881,7 @@
   }
 
   /**
-   * Get an element position on the page
+   * Get an element position on the pages
    * Thanks to `meouw`: http://stackoverflow.com/a/442474/375966
    *
    * @api private

@@ -46,7 +46,7 @@
 								deltaY = Math.abs(lastMove.y - thisMove.y);
 		 					if ((deltaX > 0 || deltaY > 0) && deltaX <= 2 && deltaY <= 2 && thisMove.timeStamp - lastMove.timeStamp <= 300) {
 								mouse = true;
-								// if this is the first check after page load, check if we are not over some item by chance and call the mouseenter handler if yes
+								// if this is the first check after pages load, check if we are not over some item by chance and call the mouseenter handler if yes
 								if (firstTime) {
 									var $a = $(e.target).closest('a');
 									if ($a.is('a')) {
@@ -329,7 +329,7 @@
 						clearTimeout(this.hideTimeout);
 						this.hideTimeout = 0;
 					}
-					// hide with a delay to prevent triggering accidental unwanted click on some page element
+					// hide with a delay to prevent triggering accidental unwanted click on some pages element
 					var self = this;
 					this.hideTimeout = setTimeout(function() { self.menuHideAll(); }, 350);
 				}
@@ -1198,7 +1198,7 @@
 		collapsibleHideFunction:function($ul, complete) { $ul.slideUp(200, complete); },	// custom function to use when hiding a collapsible sub menu
 							// (i.e. when mobile styles are used to make the sub menus collapsible)
 		showOnClick:		false,		// show the first-level sub menus onclick instead of onmouseover (i.e. mimic desktop app menus) (matters only for mouse input)
-		hideOnClick:		true,		// hide the sub menus on click/tap anywhere on the page
+		hideOnClick:		true,		// hide the sub menus on click/tap anywhere on the pages
 		noMouseOver:		false,		// disable sub menus activation onmouseover (i.e. behave like in touch mode - use just mouse clicks) (matters only for mouse input)
 		keepInViewport:		true,		// reposition the sub menus if needed to make sure they always appear inside the viewport
 		keepHighlighted:	true,		// keep all ancestor items of the current sub menu highlighted (adds the 'highlighted' class to the A's)

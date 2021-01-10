@@ -3166,7 +3166,7 @@
 	};
 
 	/**
-	 * Gets the current page position of the carousel.
+	 * Gets the current pages position of the carousel.
 	 * @protected
 	 * @returns {Number}
 	 */
@@ -3201,7 +3201,7 @@
 	};
 
 	/**
-	 * Slides to the next item or page.
+	 * Slides to the next item or pages.
 	 * @public
 	 * @param {Number} [speed=false] - The time in milliseconds for the transition.
 	 */
@@ -3210,7 +3210,7 @@
 	};
 
 	/**
-	 * Slides to the previous item or page.
+	 * Slides to the previous item or pages.
 	 * @public
 	 * @param {Number} [speed=false] - The time in milliseconds for the transition.
 	 */
@@ -3219,9 +3219,9 @@
 	};
 
 	/**
-	 * Slides to the specified item or page.
+	 * Slides to the specified item or pages.
 	 * @public
-	 * @param {Number} position - The position of the item or page.
+	 * @param {Number} position - The position of the item or pages.
 	 * @param {Number} [speed] - The time in milliseconds for the transition.
 	 * @param {Boolean} [standard=false] - Whether to use the standard behaviour or not.
 	 */

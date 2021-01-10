@@ -3764,7 +3764,7 @@ var Editor = /** @class */ (function () {
             })(idx);
             this.context.memo('help.formatH' + idx, this.lang.help['formatH' + idx]);
         }
-        
+
         this.insertParagraph = this.wrapCommand(function () {
             _this.typing.insertParagraph(_this.editable);
         });
@@ -4447,7 +4447,7 @@ var Editor = /** @class */ (function () {
      * set focus
      */
     Editor.prototype.focus = function () {
-        // [workaround] Screen will move when page is scolled in IE.
+        // [workaround] Screen will move when pages is scolled in IE.
         //  - do focus when not focused
         if (!this.hasFocus()) {
             this.$editable.focus();

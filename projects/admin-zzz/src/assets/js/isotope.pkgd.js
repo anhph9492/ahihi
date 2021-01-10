@@ -370,7 +370,7 @@ var isBoxSizeOuter;
 /**
  * setup
  * check isBoxSizerOuter
- * do on first getSize() rather than on page load for Firefox bug
+ * do on first getSize() rather than on pages load for Firefox bug
  */
 function setup() {
   // setup once

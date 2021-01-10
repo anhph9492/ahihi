@@ -13,14 +13,14 @@
       background-color: rgba($primary-color, 0.08);
       border-radius: 50px !important;
     }
-  } 
+  }
   .nav{
     .nav-link{
       img{
        height: 50px;
        margin-right: 10px;
-     }  
-   }      
+     }
+   }
  }
 }
 .landing-cards{
@@ -59,7 +59,7 @@
   h5{
     margin-bottom: 20px;
     opacity: .8;
-    letter-spacing: 1.2px;     
+    letter-spacing: 1.2px;
   }
   .btn{
     padding: 0.15rem 0.5rem;
@@ -166,9 +166,9 @@
     transition: all 0.3s ease;
     box-shadow: 0 0 47px 10px rgba($white,  0.35);
   }
-}  
+}
 .screen2{
-  position: absolute;   
+  position: absolute;
   left: 70px;
   top: 250px;
   box-shadow: 0 0 47px 10px rgba($primary-color,  0.10);
@@ -185,7 +185,7 @@
   margin-top: 101px;
   display: flex;
   align-items: center;
-  margin-left: 100px;    
+  margin-left: 100px;
 }
 .sticky-header{
  header{
@@ -200,7 +200,7 @@
   0%   {
    transform: translate(0, 0px);
  }
- 50%  {   
+ 50%  {
   transform: translate(0, 20px);
 }
 100% {
@@ -220,7 +220,7 @@
 }
 @keyframes spin {
   0%  {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}   
+  100% {transform: rotate(360deg);}
 }
 
 
@@ -266,7 +266,7 @@ $landing-color : $primary-color;
     }
   }
   .nav-link{
-    letter-spacing: 1.5px;    
+    letter-spacing: 1.5px;
 
   }
 }
@@ -293,7 +293,7 @@ $landing-color : $primary-color;
       }
     }
   }
-}     
+}
 }
 }
 .bg-sky-blue {
@@ -484,7 +484,7 @@ $landing-color : $primary-color;
     height: 165px;
     width: 250px;
     top:0;
-  }    
+  }
   &:after{
     content: "";
     position: absolute;
@@ -493,13 +493,13 @@ $landing-color : $primary-color;
     height: 208px;
     width: 250px;
     top: 0;
-  }   
+  }
   .img-effect{
     background-color: #fff;
     padding: 30px;
     margin-bottom: 40px;
     border: none;
-    transition: all 0.3s ease;    
+    transition: all 0.3s ease;
     letter-spacing: 0.5px;
     border-radius: 15px;
     box-shadow: 0 0 37px rgba(8,21,66,0.05);
@@ -513,7 +513,7 @@ $landing-color : $primary-color;
       img{
         transform: scale(1.01);
         transition: all 0.3s ease;
-      }    
+      }
     }
   }
 
@@ -534,14 +534,14 @@ $landing-color : $primary-color;
   }
   .cuba-demo-content{
     .couting{
-      h2{          
+      h2{
         color: $primary-color;
         font-weight: 500;
         font-size: calc(35px + (70 - 35) * ((100vw - 300px) / (1920 - 300)));
         background: -webkit-linear-gradient($primary-color, #966afb);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 0; 
+        margin-bottom: 0;
         line-height: 1;
       }
     }
@@ -693,7 +693,7 @@ $landing-color : $primary-color;
   0% { transform: translateY(0); }
   100% { transform: translateY(-4px); }
 }
-// Landing page responsive css start
+// Landing pages responsive css start
 @media (max-width: 1440px){
   .navbar-nav{
     .nav-item{
@@ -717,7 +717,7 @@ $landing-color : $primary-color;
         font-size: 11px;
         margin-bottom: 5px;
         margin-left: .1rem !important;
-      }  
+      }
     }
   }
   .landing-home{
@@ -731,7 +731,7 @@ $landing-color : $primary-color;
     .screen2 {
       left: 0;
     }
-  }  
+  }
 }
 @media (max-width: 1366px){
   .landing-home{
@@ -808,15 +808,15 @@ $landing-color : $primary-color;
         .navbar-nav{
           padding: 20px 30px 30px 30px;
         }
-      }  
-    }    
+      }
+    }
   }
   .bg-sky-blue {
     .main-landing {
       height: 700px;
       .landing-main-content{
         width: 70%;
-      }     
+      }
     }
   }
   .landing-main{
@@ -1064,7 +1064,7 @@ $landing-color : $primary-color;
           text-align: center !important;
         }
         img{
-          display: none; 
+          display: none;
         }
       }
     }
@@ -1081,7 +1081,7 @@ $landing-color : $primary-color;
         margin-top: 0.75rem !important;
       }
       img{
-        width: 40px;        
+        width: 40px;
       }
     }
   }
@@ -1104,17 +1104,17 @@ $landing-color : $primary-color;
   .landing-home .sticky-header header .nav-padding {
     padding: 15px 30px;
   }
-  .framworks{ 
+  .framworks{
     .mt-5 {
       margin-top: 1rem !important;
-    }   
+    }
     .nav-item{
       margin: 0 2px;
       width: auto;
       display: inline-block;
       p{
         display: none;
-      } 
+      }
       a {
        padding: 8px 17px;
      }
@@ -1206,7 +1206,7 @@ $landing-color : $primary-color;
         h1{
           font-size: 25px;
         }
-        
+
       }
     }
   }
@@ -1230,7 +1230,7 @@ $landing-color : $primary-color;
     }
   }
 }
-// Landing page responsive css end
+// Landing pages responsive css end
 /**=====================
      38. Landing CSS Ends
 ==========================**/

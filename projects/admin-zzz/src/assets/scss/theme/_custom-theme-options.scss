@@ -67,7 +67,7 @@ $i:1;
 								}
 							}
 							&.custom-scrollbar {
-								&::-webkit-scrollbar-thumb {        
+								&::-webkit-scrollbar-thumb {
 									background-color: $dark-card-background;
 								}
 							}
@@ -164,7 +164,7 @@ $i:1;
 								}
 							}
 							&.custom-scrollbar {
-								&::-webkit-scrollbar-thumb {        
+								&::-webkit-scrollbar-thumb {
 									background-color: $color1;
 								}
 							}
@@ -272,7 +272,7 @@ $i:1;
 								}
 							}
 							&.custom-scrollbar {
-								&::-webkit-scrollbar-thumb {        
+								&::-webkit-scrollbar-thumb {
 									background-color: $color2;
 								}
 							}
@@ -373,7 +373,7 @@ $i:1;
 								}
 							}
 							&.custom-scrollbar {
-								&::-webkit-scrollbar-thumb {        
+								&::-webkit-scrollbar-thumb {
 									background-color: $color3;
 								}
 							}
@@ -475,7 +475,7 @@ $i:1;
 								}
 							}
 							&.custom-scrollbar {
-								&::-webkit-scrollbar-thumb {        
+								&::-webkit-scrollbar-thumb {
 									background-color: $color4;
 								}
 							}
@@ -581,7 +581,7 @@ $i:1;
 								}
 							}
 							&.custom-scrollbar {
-								&::-webkit-scrollbar-thumb {        
+								&::-webkit-scrollbar-thumb {
 									background-color: $color5;
 								}
 							}
@@ -674,14 +674,14 @@ $i:1;
 
 								}
 							}
-							
+
 						}
 					}
 					&[sidebar-layout="iconcolor-sidebar"]{
 						.main-navbar{
 							.nav-menu{
 								>li{
-									
+
 									$colors: $success-color, $secondary-color, $primary-color, $danger-color, $info-color, $warning-color, $light-color;
 									$repeat: 100 ;
 									@for $i from 1 through $repeat {
@@ -699,10 +699,10 @@ $i:1;
 
 										}
 									}
-									
+
 								}
 							}
-							
+
 						}
 						&.light-sidebar{
 							.main-navbar{
@@ -751,7 +751,7 @@ $i:1;
 								}
 							}
 							&.custom-scrollbar {
-								&::-webkit-scrollbar-thumb {        
+								&::-webkit-scrollbar-thumb {
 									background-color: $dark-card-background;
 								}
 							}
@@ -846,7 +846,7 @@ $i:1;
 								}
 							}
 							&.custom-scrollbar {
-								&::-webkit-scrollbar-thumb {        
+								&::-webkit-scrollbar-thumb {
 									background-color: $dark-card-background;
 								}
 							}
@@ -922,7 +922,7 @@ $i:1;
 				}
 			}
 		}
-		
+
 	}
 }
 
@@ -1016,29 +1016,29 @@ body {
 		#lnb {
 			border-right: 1px solid $dark-card-border;
 		}
-		.lnb-new-schedule {    
+		.lnb-new-schedule {
 			border-bottom: 1px solid $dark-card-border;
 		}
-		.lnb-calendars>div { 
+		.lnb-calendars>div {
 			border-bottom: 1px solid $dark-card-border;
 		}
 		#menu .dropdown .btn-default{
-			color: $dark-all-font-color;	
+			color: $dark-all-font-color;
 		}
 		.tui-full-calendar-timegrid-hour {
 			background-color: $dark-card-background;
 			color: #fff !important;
 		}
 		.btn{
-			color: $dark-all-font-color;	
+			color: $dark-all-font-color;
 		}
 		span.tui-full-calendar-dayname-date-area {
 			color: #fff !important;
 		}
 		.tui-full-calendar-layout{
-			background-color: $dark-card-background !important;    
+			background-color: $dark-card-background !important;
 		}
-		//index page
+		//index pages
 		@media screen and (max-device-width: 1366px){
 			.earning-card{
 				&.card{
@@ -1087,8 +1087,8 @@ body {
 				}
 			}
 		}
-		
-		// index page css end
+
+		// index pages css end
 		.ecommerce-widget {
 			border: 1px solid $dark-card-border !important;
 		}
@@ -1153,7 +1153,7 @@ body {
 				}
 			}
 		}
-		// index page css start
+		// index pages css start
 		.earning-card {
 			&.card {
 				.card-body {
@@ -1301,7 +1301,7 @@ body {
 				}
 			}
 		}
-		// index page css end
+		// index pages css end
 		// ecommerce dashboard css start
 		.dash-chart {
 			.media {
@@ -1849,7 +1849,7 @@ body {
 																background-color: $dark-card-background;
 															}
 														}
-													}	
+													}
 													.submenu-content {
 														&.opensubmegamenu {
 															li {
@@ -1875,7 +1875,7 @@ body {
 										}
 									}
 									&.custom-scrollbar {
-										&::-webkit-scrollbar-thumb {        
+										&::-webkit-scrollbar-thumb {
 											background-color: $dark-card-background;
 										}
 									}
@@ -1953,7 +1953,7 @@ body {
 							}
 						}
 						.nav-menus {
-							li {								
+							li {
 								.media {
 									.media-body {
 										.txt-dark {
@@ -1986,7 +1986,7 @@ body {
 										color: $dark-all-font-color !important;
 									}
 								}
-							}	
+							}
 
 						}
 						.profile-dropdown {
@@ -5373,7 +5373,7 @@ body {
 																background-color: $dark-card-background;
 															}
 														}
-													}	
+													}
 													.submenu-content {
 														&.opensubmegamenu {
 															li {
@@ -5399,7 +5399,7 @@ body {
 										}
 									}
 									&.custom-scrollbar {
-										&::-webkit-scrollbar-thumb {        
+										&::-webkit-scrollbar-thumb {
 											background-color: $dark-card-background;
 										}
 									}
@@ -5595,7 +5595,7 @@ body {
 															background-color: $dark-card-background;
 														}
 													}
-												}	
+												}
 												.submenu-content {
 													&.opensubmegamenu {
 														li {
@@ -5621,7 +5621,7 @@ body {
 									}
 								}
 								&.custom-scrollbar {
-									&::-webkit-scrollbar-thumb {        
+									&::-webkit-scrollbar-thumb {
 										background-color: $dark-card-background;
 									}
 								}
@@ -5638,7 +5638,7 @@ body {
 									}
 								}
 							}
-							
+
 							.main-navbar{
 								.nav-menu{
 									&>li{
@@ -5936,8 +5936,8 @@ body {
 	.sidebar-title p {
 		color: rgba(255,255,255,0.7);
 	}
-	color: $dark-all-font-color;	
-		//index page css
+	color: $dark-all-font-color;
+		//index pages css
 		.kanban-container .kanban-item .kanban-box{
 			border: 1px solid rgba($primary-color, 0.3);
 		}
@@ -6001,11 +6001,11 @@ body {
 				}
 			}
 		}
-		//index page css end
+		//index pages css end
 		.input-group-air {
 			box-shadow: 0 3px 20px 0 $dark-body-background;
 		}
-		// product page css start
+		// product pages css start
 		.product-wrapper{
 			&.sidebaron{
 				.product-sidebar{
@@ -6019,7 +6019,7 @@ body {
 				}
 			}
 		}
-		// products page css end
+		// products pages css end
 		.page-main-header{
 			.main-header-right{
 				.nav-right {
@@ -6077,7 +6077,7 @@ body {
 																background-color: $dark-card-background;
 															}
 														}
-													}	
+													}
 													.submenu-content {
 														&.opensubmegamenu {
 															li {
@@ -6103,7 +6103,7 @@ body {
 										}
 									}
 									&.custom-scrollbar {
-										&::-webkit-scrollbar-thumb {        
+										&::-webkit-scrollbar-thumb {
 											background-color: $dark-card-background;
 										}
 									}
@@ -7757,7 +7757,7 @@ body {
 				}
 			}
 		}
-		// index page css start
+		// index pages css start
 		.earning-card {
 			&.card {
 				.card-body {
@@ -7905,7 +7905,7 @@ body {
 				}
 			}
 		}
-		// index page css end
+		// index pages css end
 		// ecommerce dashboard css start
 		.dash-chart {
 			.media {

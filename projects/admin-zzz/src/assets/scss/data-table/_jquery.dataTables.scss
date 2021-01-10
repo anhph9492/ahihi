@@ -21,7 +21,7 @@ $table-row-selected: #B0BED9 !default;
 // Text colour of the interaction control elements (info, filter, paging etc)
 $table-control-color: #333 !default;
 
-// Highlight colour of the paging button for the current page
+// Highlight colour of the paging button for the current pages
 $table-paging-button-active: #dcdcdc !default;
 
 // Hover colour of paging buttons on mouse over
@@ -246,7 +246,7 @@ table.dataTable {
 			>.sorting_1 { background-color: shade($table-row-background, 2%); } // shade by fa
 			>.sorting_2 { background-color: shade($table-row-background, 1.2%); } // shade by fc
 			>.sorting_3 { background-color: shade($table-row-background, 0.4%); } // shade by fe
-			
+
 			&.selected {
 				>.sorting_1 { background-color: shade($table-row-selected, 2%); }
 				>.sorting_2 { background-color: shade($table-row-selected, 1.2%); }

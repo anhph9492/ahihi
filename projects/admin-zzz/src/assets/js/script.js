@@ -8,7 +8,7 @@
     $(".close-search").click(function(){
         $(".search-full").removeClass("open");
         $("body").removeClass("offcanvas");
-    });    
+    });
 
     $(".mobile-toggle").click(function(){
         $(".nav-menus").toggleClass("open");
@@ -31,9 +31,9 @@
 
     $(".form-control-search input").keyup(function(e){
         if(e.target.value) {
-            $(".page-wrapper").addClass("offcanvas-bookmark");
+            $(".pages-wrapper").addClass("offcanvas-bookmark");
         } else {
-            $(".page-wrapper").removeClass("offcanvas-bookmark");
+            $(".pages-wrapper").removeClass("offcanvas-bookmark");
         }
     });
 
@@ -48,14 +48,14 @@
         } else {
             $("body").removeClass("offcanvas");
         }
-    });    
+    });
 
     $('body').keydown(function(e){
         if(e.keyCode == 27) {
 
             $('.search-full input').val('');
             $('.form-control-search input').val('');
-            $('.page-wrapper').removeClass('offcanvas-bookmark');
+            $('.pages-wrapper').removeClass('offcanvas-bookmark');
             $('.search-full').removeClass('open');
             $('.search-form .form-control-search').removeClass('open');
             $("body").removeClass("offcanvas");
@@ -65,8 +65,8 @@
      $(".mode").on("click", function () {
         $('.mode i').toggleClass("fa-moon-o").toggleClass("fa-lightbulb-o");
         $('body').toggleClass("dark-only");
-    });       
-     
+    });
+
     // $(".search-full input").focus(function(e){
     //     $("body").addClass("offcanvas");
     // });
@@ -147,36 +147,36 @@ $(".chat-menu-icons .toogle-bar").click(function(){
 // Language
 var tnum = 'en';
 
-$(document).ready(function(){  
+$(document).ready(function(){
   $(document).click( function(e) {
-       $('.translate_wrapper, .more_lang').removeClass('active');     
-  });  
-  $('.translate_wrapper .current_lang').click(function(e){    
+       $('.translate_wrapper, .more_lang').removeClass('active');
+  });
+  $('.translate_wrapper .current_lang').click(function(e){
     e.stopPropagation();
     $(this).parent().toggleClass('active');
-    
+
     setTimeout(function(){
       $('.more_lang').toggleClass('active');
     }, 5);
   });
-  
+
 
   /*TRANSLATE*/
   translate(tnum);
-  
+
   $('.more_lang .lang').click(function(){
     $(this).addClass('selected').siblings().removeClass('selected');
-    $('.more_lang').removeClass('active');  
-    
-    var i = $(this).find('i').attr('class');    
+    $('.more_lang').removeClass('active');
+
+    var i = $(this).find('i').attr('class');
     var lang = $(this).attr('data-value');
     var tnum = lang;
     translate(tnum);
-    
+
     $('.current_lang .lang-txt').text(lang);
-    $('.current_lang i').attr('class', i);   
-   
-    
+    $('.current_lang i').attr('class', i);
+
+
   });
 });
 
@@ -192,24 +192,24 @@ function translate(tnum){
   $('.lan-9').text(trans[8][tnum]);
 }
 
-var trans = [ 
-  { 
+var trans = [
+  {
     en : 'General',
     pt : 'Geral',
     es : 'Generalo',
     fr : 'GÃ©nÃ©rale',
-    de : 'Generel', 
+    de : 'Generel',
     cn : 'ä¸€èˆ¬',
     ae : 'Ø­Ø¬Ù†Ø±Ø§Ù„ Ù„ÙˆØ§Ø¡'
-  },{ 
+  },{
     en : 'Dashboards,widgets & layout.',
     pt : 'PainÃ©is, widgets e layout.',
     es : 'Paneloj, fenestraÄµoj kaj aranÄo.',
-    fr: "Tableaux de bord, widgets et mise en page.",
+    fr: "Tableaux de bord, widgets et mise en pages.",
     de: 'Dashboards, widgets en lay-out.',
     cn: 'ä»ªè¡¨æ¿ï¼Œå°å·¥å…·å’Œå¸ƒå±€ã€‚',
     ae : 'Ù„ÙˆØ­Ø§Øª Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª ÙˆØ§Ù„Ø£Ø¯ÙˆØ§Øª ÙˆØ§Ù„ØªØ®Ø·ÙŠØ·.'
-  },{ 
+  },{
     en : 'Dashboards',
     pt : 'PainÃ©is',
     es : 'Paneloj',
@@ -217,7 +217,7 @@ var trans = [
     de : 'Dashboards',
     cn : ' ä»ªè¡¨æ¿ ',
     ae : 'ÙˆØ­Ø§Øª Ø§Ù„Ù‚ÙŠØ§Ø¯Ø© '
-  },{ 
+  },{
     en : 'Default',
     pt : 'PadrÃ£o',
     es : 'Vaikimisi',
@@ -225,7 +225,7 @@ var trans = [
     de : 'Standaard',
     cn : 'é›»å­å•†å‹™',
     ae : 'ÙˆØ¥ÙØªØ±Ø§Ø¶ÙŠ'
-  },{ 
+  },{
     en : 'Ecommerce',
     pt : 'ComÃ©rcio eletrÃ´nico',
     es : 'Komerco',
@@ -233,7 +233,7 @@ var trans = [
     de : 'E-commerce',
     cn : 'é›»å­å•†å‹™',
     ae : 'ÙˆØ§Ù„ØªØ¬Ø§Ø±Ø© Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠØ©'
-  },{ 
+  },{
     en : 'Widgets',
     pt : 'Ferramenta',
     es : 'Vidin',
@@ -241,15 +241,15 @@ var trans = [
     de : 'Widgets',
     cn : 'å°éƒ¨ä»¶',
     ae : 'ÙˆØ§Ù„Ø­Ø§Ø¬ÙŠØ§Øª'
-  },{ 
+  },{
     en : 'Page layout',
     pt : 'Layout da pÃ¡gina',
     es : 'PaÄa aranÄo',
     fr : 'Tableaux',
-    de : 'Mise en page',
+    de : 'Mise en pages',
     cn : 'é é¢ä½ˆå±€',
     ae : 'ÙˆØªØ®Ø·ÙŠØ· Ø§Ù„ØµÙØ­Ø©'
-  },{ 
+  },{
     en : 'Applications',
     pt : 'FormulÃ¡rios',
     es : 'Aplikoj',
@@ -257,7 +257,7 @@ var trans = [
     de : 'Toepassingen',
     cn : 'æ‡‰ç”¨é ˜åŸŸ',
     ae : 'ÙˆØ§Ù„ØªØ·Ø¨ÙŠÙ‚Ø§Øª'
-  },{ 
+  },{
     en : 'Ready to use Apps',
     pt : 'Pronto para usar aplicativos',
     es : 'Preta uzi Apps',
@@ -266,7 +266,7 @@ var trans = [
     cn : 'ä»ªè¡¨æ¿',
     ae : 'Ø¬Ø§Ù‡Ø² Ù„Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„ØªØ·Ø¨ÙŠÙ‚Ø§Øª'
   },
-  
+
 ];
 
 

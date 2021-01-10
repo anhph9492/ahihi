@@ -66,7 +66,7 @@
       justify-content: space-between;
       .badge {
         color: $white !important;
-        padding: 10px 14px !important; 
+        padding: 10px 14px !important;
         &:first-child{
           display: flex;
           align-items: center;
@@ -125,7 +125,7 @@
   }
   .whatsnew-btn{
     .btn{
-      background-color: $white !important; 
+      background-color: $white !important;
       border-radius:5px;
       color:  $primary-color;
       font-weight:500;
@@ -149,7 +149,7 @@
         padding:40px 0;
       }
     }
-    
+
     .left_side_earning{
       margin-bottom:30px;
       &:last-child{
@@ -159,7 +159,7 @@
         line-height: 36px;
         font-weight: 500;
         margin:0;
-        
+
       }
       p{
         font-size: 14px;
@@ -167,7 +167,7 @@
       }
     }
     .left-btn{
-      a{  
+      a{
         &.btn{
           padding: 10px 16px;
         }
@@ -182,7 +182,7 @@
           margin-left: 35px;
           letter-spacing: 1px;
           &.active{
-            color: $primary-color ;                
+            color: $primary-color ;
           }
         }
       }
@@ -460,7 +460,7 @@
       }
     }
   }
-  .alert-sec{    
+  .alert-sec{
     .card{
       &.bg-img{
         background-image: url(../images/dashboard/bg.jpg);
@@ -495,7 +495,7 @@
       }
       .card-body{
         .body-bottom{
-          h6{  
+          h6{
             color: $white;
             margin-bottom:8px;
           }
@@ -547,7 +547,7 @@
             100%{
               transform:scale(1);
             }
-            
+
           }
         }
         span{
@@ -564,7 +564,7 @@
           img{
             border-radius:5px;
             transition:0.3s all linear;
-          } 
+          }
           &:hover{
             img{
               animation: tada 1.5s ease-out infinite;
@@ -595,7 +595,7 @@
       td {
         position: relative;
         border-top: none;
-        padding: 0;        
+        padding: 0;
         .status-circle {
           top: 1px;
           left: 35px;
@@ -750,7 +750,7 @@
           &:focus {
             box-shadow: none;
           }
-          
+
         }
         .send-msg {
           width: 50px;
@@ -1678,7 +1678,7 @@
   }
 }
 
-// tilt page
+// tilt pages
 .tilt-showcase{
   ul{
     li{
@@ -1692,7 +1692,7 @@
   }
 }
 
-// wow page
+// wow pages
 .wow-title{
   h5{
     display: flex;
@@ -1703,7 +1703,7 @@
     }
   }
 }
-// alert page
+// alert pages
 .alert-center{
   display:flex!important;
   align-items: center;
@@ -1714,7 +1714,7 @@
     margin: 30px 0;
   }
 }
-// tour page
+// tour pages
 .hovercard{
   .info{
     .social-media{
@@ -1730,7 +1730,7 @@
     border-top-right-radius: 5px;
   }
 }
-// sticky page
+// sticky pages
 .sticky-header-main{
   .card{
     .card-header{
@@ -1744,11 +1744,11 @@
     }
   }
 }
-// radio-checkbox-control page
+// radio-checkbox-control pages
 .custom-radio-ml{
   margin-left: 3px;
 }
-// date range picker page
+// date range picker pages
 .daterangepicker{
   .ltr{
     tr{
@@ -1761,7 +1761,7 @@
   }
 }
 
-// typeahead page
+// typeahead pages
 #scrollable-dropdown-menu{
   .twitter-typeahead{
     .tt-menu{
@@ -1786,7 +1786,7 @@
     color: $primary-color;
   }
 }
-// bootstrap basic table page
+// bootstrap basic table pages
 .card-block{
   .table-responsive{
     .table{
@@ -1813,7 +1813,7 @@
     }
   }
 }
-// datatable styling page
+// datatable styling pages
 #example-style-3_wrapper{
   #example-style-3{
     tfoot{
@@ -1821,7 +1821,7 @@
     }
   }
 }
-// chartjs page
+// chartjs pages
 .chart-vertical-center{
   display: flex;
   justify-content: center;
@@ -1830,12 +1830,12 @@
   }
 }
 
-// ckeditor page
+// ckeditor pages
 .cke_focus{
   padding: 15px;
   margin-top: 13px;
 }
-// ace-code-editor page
+// ace-code-editor pages
 #editor{
   .ace_scroller{
     .ace_content{
@@ -1847,14 +1847,14 @@
     }
   }
 }
-// Helper classes page css
+// Helper classes pages css
 .helper-classes{
   padding: 30px;
   margin-bottom: 0;
   white-space: pre-line;
 }
 
-// starter kit page css
+// starter kit pages css
 .starter-kit-fix {
   .page-body {
     margin-bottom: 52px;
@@ -2008,7 +2008,7 @@ footer{
               text-align: right;
             }
           }
-          
+
         }
         .chart-right{
           padding-bottom:40px;
@@ -2038,8 +2038,8 @@ footer{
           .datepicker--content {
             .datepicker--days {
               .datepicker--days-names {
-                margin: 20px 0 19px; 
-                padding: 12px 0; 
+                margin: 20px 0 19px;
+                padding: 12px 0;
               }
             }
           }
@@ -2057,7 +2057,7 @@ footer{
 }
 @media only screen and (max-width: 1199px) {
   .morning-sec{
-    order: unset; 
+    order: unset;
   }
   .profile-greeting {
     .greeting-user {
@@ -2100,9 +2100,9 @@ footer{
           }
         }
         .media{
-          margin-left:0;   
+          margin-left:0;
         }
-        
+
       }
       .border-top{
         > div{
@@ -2111,7 +2111,7 @@ footer{
           }
         }
       }
-    } 
+    }
   }
 }
 .chart_data_left{
@@ -2326,7 +2326,7 @@ footer{
   }
 }
 @media only screen and (max-width: 575px){
-  
+
   .morning-sec{
     .card-body{
       .greeting-user{
@@ -2413,7 +2413,7 @@ footer{
               }
             }
           }
-          
+
         }
       }
       .inner-top-right{

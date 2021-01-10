@@ -3,5 +3,286 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "e-commerce-zzz": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/e-commerce-zzz",
+      "sourceRoot": "projects/e-commerce-zzz/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/e-commerce-zzz",
+            "index": "projects/e-commerce-zzz/src/index.html",
+            "main": "projects/e-commerce-zzz/src/main.ts",
+            "polyfills": "projects/e-commerce-zzz/src/polyfills.ts",
+            "tsConfig": "projects/e-commerce-zzz/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/e-commerce-zzz/src/favicon.ico",
+              "projects/e-commerce-zzz/src/assets"
+            ],
+            "styles": [
+              "projects/e-commerce-zzz/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/e-commerce-zzz/src/environments/environment.ts",
+                  "with": "projects/e-commerce-zzz/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "e-commerce-zzz:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "e-commerce-zzz:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "e-commerce-zzz:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/e-commerce-zzz/src/test.ts",
+            "polyfills": "projects/e-commerce-zzz/src/polyfills.ts",
+            "tsConfig": "projects/e-commerce-zzz/tsconfig.spec.json",
+            "karmaConfig": "projects/e-commerce-zzz/karma.conf.js",
+            "assets": [
+              "projects/e-commerce-zzz/src/favicon.ico",
+              "projects/e-commerce-zzz/src/assets"
+            ],
+            "styles": [
+              "projects/e-commerce-zzz/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/e-commerce-zzz/tsconfig.app.json",
+              "projects/e-commerce-zzz/tsconfig.spec.json",
+              "projects/e-commerce-zzz/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/e-commerce-zzz/e2e/protractor.conf.js",
+            "devServerTarget": "e-commerce-zzz:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "e-commerce-zzz:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "utils": {
+      "projectType": "library",
+      "root": "projects/utils",
+      "sourceRoot": "projects/utils/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/utils/tsconfig.lib.json",
+            "project": "projects/utils/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/utils/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/utils/src/test.ts",
+            "tsConfig": "projects/utils/tsconfig.spec.json",
+            "karmaConfig": "projects/utils/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/utils/tsconfig.lib.json",
+              "projects/utils/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "admin-zzz": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/admin-zzz",
+      "sourceRoot": "projects/admin-zzz/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/admin-zzz",
+            "index": "projects/admin-zzz/src/index.html",
+            "main": "projects/admin-zzz/src/main.ts",
+            "polyfills": "projects/admin-zzz/src/polyfills.ts",
+            "tsConfig": "projects/admin-zzz/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/admin-zzz/src/favicon.ico",
+              "projects/admin-zzz/src/assets"
+            ],
+            "styles": [
+              "projects/admin-zzz/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/admin-zzz/src/environments/environment.ts",
+                  "with": "projects/admin-zzz/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "admin-zzz:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "admin-zzz:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "admin-zzz:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/admin-zzz/src/test.ts",
+            "polyfills": "projects/admin-zzz/src/polyfills.ts",
+            "tsConfig": "projects/admin-zzz/tsconfig.spec.json",
+            "karmaConfig": "projects/admin-zzz/karma.conf.js",
+            "assets": [
+              "projects/admin-zzz/src/favicon.ico",
+              "projects/admin-zzz/src/assets"
+            ],
+            "styles": [
+              "projects/admin-zzz/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/admin-zzz/tsconfig.app.json",
+              "projects/admin-zzz/tsconfig.spec.json",
+              "projects/admin-zzz/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/admin-zzz/e2e/protractor.conf.js",
+            "devServerTarget": "admin-zzz:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "admin-zzz:serve:production"
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "e-commerce-zzz"
 }

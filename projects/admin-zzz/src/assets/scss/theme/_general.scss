@@ -66,7 +66,7 @@ input {
         outline-color: $transparent-color;
     }
 }
-label { 
+label {
     margin-bottom: .5rem;
 }
 .media-widgets {
@@ -149,7 +149,7 @@ a{
         border-color: $light-color;
     }
 }
-// modal page
+// modal pages
 .modal {
     .modal-body {
         .card {
@@ -168,7 +168,7 @@ a{
         }
     }
 }
-// index page notify
+// index pages notify
 .alert-theme{
     button{
         top: 33px !important;
@@ -257,7 +257,7 @@ fieldset{
     .bootstrap-touchspin-postfix,.bootstrap-touchspin-prefix{
             border-radius: 0;
             padding: .4rem .75rem;
-    }   
+    }
     .input-group-prepend{
         &~.form-control{
             height: 39px;
@@ -269,7 +269,7 @@ fieldset{
                     padding: 0.8rem 1.75rem;
             }
         }
-    } 
+    }
 }
 .f1 .f1-steps .f1-step .f1-step-icon{
     padding: 12px;

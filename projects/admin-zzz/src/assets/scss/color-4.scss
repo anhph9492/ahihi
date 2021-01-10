@@ -17,7 +17,7 @@
 // 06. Button CSS start
 // 07. Color CSS Start
 // 08. GRID CSS Start
-// 09. Error-page  CSS Start
+// 09. Error-pages  CSS Start
 // 10. ICON CSS Start
 // 11. Form Builder 1 CSS Start
 // 12. Form Builder 2 CSS Start
@@ -203,5 +203,5 @@ $pre-tag-bg-color: rgba($primary-color, 0.05);
 @import "theme/box-layout";
 @import "theme/rtl";
 .page-wrapper.compact-wrapper .page-body-wrapper.sidebar-icon header.main-nav .main-navbar .nav-menu>li .nav-link.active {
-    background-image: linear-gradient(90deg, $primary-color 0%, $secondary-color 100%);  
+    background-image: linear-gradient(90deg, $primary-color 0%, $secondary-color 100%);
 }
