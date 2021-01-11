@@ -1,28 +1,250 @@
-<div class="table-responsive">
-  <table class="display" id="basic-1">
-    <thead>
-    <tr>
-      <th>Name</th>
-      <th>Position</th>
-      <th>Office</th>
-      <th>Age</th>
-      <th>Start date</th>
-      <th>Salary</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Tiger Nixon</td>
-      <td>System Architect</td>
-      <td>Edinburgh</td>
-      <td>61</td>
-      <td>2011/04/25</td>
-      <td>$320,800</td>
-    </tr>
-    </tbody>
-  </table>
+<div class="row" class="post-component-check">
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <h5>Post Edit</h5>
+      </div>
+      <div class="card-body add-post">
+        <form class="row needs-validation" novalidate="">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="validationCustom01">Title:</label>
+              <input class="form-control" id="validationCustom01" type="text" placeholder="Post Title" required="">
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="form-group">
+              <label>Type:</label>
+              <div class="m-checkbox-inline">
+                <label for="edo-ani">
+                  <input class="radio_animated" id="edo-ani" type="radio" name="rdo-ani" checked="">Text
+                </label>
+                <label for="edo-ani1">
+                  <input class="radio_animated" id="edo-ani1" type="radio" name="rdo-ani">Image
+                </label>
+                <label for="edo-ani2">
+                  <input class="radio_animated" id="edo-ani2" type="radio" name="rdo-ani" checked="">Audio
+                </label>
+                <label for="edo-ani3">
+                  <input class="radio_animated" id="edo-ani3" type="radio" name="rdo-ani">Video
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-form-label">Category:
+                <select class="js-example-placeholder-multiple col-sm-12" multiple="multiple">
+                  <option value="AL">Lifestyle</option>
+                  <option value="WY">Travel</option>
+                </select>
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="theme-form">
+                <div class="form-group">
+                  <label>Content:</label>
+                  <textarea id="text-box" name="text-box" cols="10" rows="2" class="post-component-check-textarea"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form class="dropzone digits" id="singleFileUpload" action="/upload.php">
+          <div class="m-0 dz-message needsclick"><i class="icon-cloud-up"></i>
+            <h6 class="mb-0" class="post-component-check-upload">Drop files here or click to upload.</h6>
+          </div>
+        </form>
+        <div class="btn-showcase">
+          <button class="btn btn-primary" type="submit">Post</button>
+          <input class="btn btn-light" type="reset" value="Discard">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<h1>post component</h1>
-<li><a routerLink="/posts/create" routerLinkActive="active">create Posts</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="row">-->
+<!--  <div class="col-sm-12">-->
+<!--    <div class="card">-->
+<!--      <div class="card-header">-->
+<!--        <button class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg"><i-->
+<!--          class="fa fa-plus"></i></button>-->
+<!--        <div class="form-group">-->
+<!--          <div class="col-form-label">Category:-->
+<!--            <select class="js-example-placeholder-multiple col-sm-12 select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">-->
+<!--              <option value="AL">Lifestyle</option>-->
+<!--              <option value="WY">Travel</option>-->
+<!--            </select><span class="select2 select2-container select2-container&#45;&#45;default select2-container&#45;&#45;below select2-container&#45;&#45;focus" dir="ltr" style="width: 766px;"><span class="selection"><span class="select2-selection select2-selection&#45;&#45;multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="Travel"><span class="select2-selection__choice__remove" role="presentation">×</span>Travel</li><li class="select2-search select2-search&#45;&#45;inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 3em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="table-responsive">-->
+<!--        <table class="table table-bordered">-->
+<!--          <thead>-->
+<!--          <tr>-->
+<!--            <th scope="col">#</th>-->
+<!--            <th scope="col">First Name</th>-->
+<!--            <th scope="col">Last Name</th>-->
+<!--            <th scope="col">Username</th>-->
+<!--          </tr>-->
+<!--          </thead>-->
+<!--          <tbody>-->
+<!--          <tr>-->
+<!--            <th scope="row">1</th>-->
+<!--            <td>Mark</td>-->
+<!--            <td>Otto</td>-->
+<!--            <td>@mdo</td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <th scope="row">2</th>-->
+<!--            <td>Mark</td>-->
+<!--            <td>Otto</td>-->
+<!--            <td>@TwBootstrap</td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <th scope="row">3</th>-->
+<!--            <td>Jacob</td>-->
+<!--            <td>Thornton</td>-->
+<!--            <td>@fat</td>-->
+<!--          </tr>-->
+<!--          </tbody>-->
+<!--        </table>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"-->
+<!--     aria-hidden="true">-->
+<!--  <div class="modal-dialog modal-lg">-->
+<!--    <div class="modal-content">-->
+<!--      <div class="modal-header">-->
+<!--        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+<!--        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--          <span aria-hidden="true">&times;</span>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <div class="modal-body">-->
+<!--        <form class="theme-form" [formGroup]="postForm" >-->
+<!--          <div class="form-group row">-->
+<!--            <label class="col-sm-3 col-form-label" for="inputEmail3">Email</label>-->
+<!--            <div class="col-sm-9">-->
+<!--              <input class="form-control" id="inputEmail3" type="email" placeholder="Email" data-original-title="" title="">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="form-group row">-->
+<!--            <label class="col-sm-3 col-form-label" for="inputPassword3">Password</label>-->
+<!--            <div class="col-sm-9">-->
+<!--              <input class="form-control" id="inputPassword3" type="password" placeholder="Password"-->
+<!--                     data-original-title="" title="">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="form-group row">-->
+<!--            <label class="col-sm-3 col-form-label" for="inputPassword3">Contact Number</label>-->
+<!--            <div class="col-sm-9">-->
+<!--              <input  class="form-control" id="inputnumber" type="number" placeholder="Contact" data-original-title=""-->
+<!--                     title="">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="form-group row">-->
+<!--            <label class="col-sm-3 col-form-label" >Title</label>-->
+<!--            <div class="col-sm-9">-->
+<!--              <input formControlName="title"  class="form-control" id="url" type="text" placeholder="Company name" data-original-title=""-->
+<!--                     title="">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="form-group row">-->
+<!--            <label class="col-sm-3 col-form-label" for="inputPassword3">Website</label>-->
+<!--            <div class="col-sm-9">-->
+<!--              <input class="form-control" id="Website" type="url" placeholder="Website" data-original-title="" title="">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <fieldset class="form-group">-->
+<!--            <div class="row">-->
+<!--              <label class="col-form-label col-sm-3 pt-0">Radios</label>-->
+<!--              <div class="col-sm-9">-->
+<!--                <div class="radio radio-primary">-->
+<!--                  <input id="radio11" type="radio" name="radio1" value="option1" data-original-title="" title="">-->
+<!--                  <label for="radio11">Option 1</label>-->
+<!--                </div>-->
+<!--                <div class="radio radio-primary">-->
+<!--                  <input id="radio22" type="radio" name="radio1" value="option1" data-original-title="" title="">-->
+<!--                  <label for="radio22">Option 2</label>-->
+<!--                </div>-->
+<!--                <div class="radio radio-primary">-->
+<!--                  <input id="radio33" type="radio" name="radio1" value="option1" disabled="" data-original-title=""-->
+<!--                         title="">-->
+<!--                  <label for="radio33">Disabled</label>-->
+<!--                </div>-->
+<!--                <div class="radio radio-primary">-->
+<!--                  <input id="radio44" type="radio" name="radio1" value="option1" checked="" data-original-title=""-->
+<!--                         title="">-->
+<!--                  <label for="radio44">Option 3</label>-->
+<!--                </div>-->
+<!--                <div class="radio radio-primary">-->
+<!--                  <input id="radio55" type="radio" name="radio1" value="option1" checked="" data-original-title=""-->
+<!--                         title="">-->
+<!--                  <label for="radio44">Option 4</label>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </fieldset>-->
+<!--          <div class="form-group row">-->
+<!--            <label class="col-sm-3 col-form-label pb-0">Checkboxes</label>-->
+<!--            <div class="col-sm-9">-->
+<!--              <div class="form-group m-checkbox-inline mb-0">-->
+<!--                <div class="checkbox checkbox-primary">-->
+<!--                  <input id="inline-form-1" type="checkbox" data-original-title="" title="">-->
+<!--                  <label class="mb-0" for="inline-form-1">Option 1</label>-->
+<!--                </div>-->
+<!--                <div class="checkbox checkbox-primary">-->
+<!--                  <input id="inline-form-2" type="checkbox" data-original-title="" title="">-->
+<!--                  <label class="mb-0" for="inline-form-2">Option 1</label>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+
+<!--          <div class="form-group row mb-0">-->
+<!--            <label class="col-sm-3 col-form-label" for="inputPassword3">Content</label>-->
+
+<!--            <div class="col-sm-9">-->
+<!--              <editor formControlName="content"-->
+<!--                [init]="{-->
+<!--                          height: 500,-->
+<!--                          menubar: false,-->
+<!--                          plugins: [-->
+<!--                          'advlist autolink lists link image charmap print preview anchor',-->
+<!--                          'searchreplace visualblocks code fullscreen',-->
+<!--                          'insertdatetime media table paste code help wordcount'],-->
+<!--                          toolbar:-->
+<!--                          'undo redo | formatselect | bold italic backcolor | ' +-->
+<!--                           'alignleft aligncenter alignright alignjustify | ' +-->
+<!--                           'bullist numlist outdent indent | removeformat | help'-->
+<!--                           }">-->
+<!--              </editor>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </form>-->
+
+
+<!--      </div>-->
+<!--      <div class="modal-footer">-->
+<!--        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--        <button type="button" class="btn btn-primary" (click)="save()">Save changes</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
 

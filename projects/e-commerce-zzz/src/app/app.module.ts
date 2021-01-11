@@ -9,6 +9,7 @@ import {DbconnectModule} from '../../../utils/src/lib/dbconnect/dbconnect.module
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
     DbconnectModule,
     ReactiveFormsModule,
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
-    FormlyBootstrapModule
+    FormlyBootstrapModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
