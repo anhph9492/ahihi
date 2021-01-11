@@ -7,10 +7,9 @@ import {AdminLayoutComponent} from './layouts/admin/admin-layout.component';
 import {DbconnectModule} from '../../../utils/src/lib/dbconnect/dbconnect.module';
 import {HeaderComponent} from './shared/components/header/header.component';
 import {SidebarComponent} from './shared/components/sidebar/sidebar.component';
-import {FormlyModule} from '@ngx-formly/core';
-import {FormlyBootstrapModule} from '@ngx-formly/bootstrap';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,11 +19,10 @@ import {HttpClientModule} from '@angular/common/http';
     SidebarComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     DbconnectModule,
-    FormlyModule.forRoot(),
-    FormlyBootstrapModule,
     FormsModule,
     HttpClientModule
   ],

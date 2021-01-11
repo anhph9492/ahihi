@@ -1,21 +1,22 @@
-import {NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
-import {ProductsComponent} from './products.component';
 import {RouterModule} from '@angular/router';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import {PostComponent} from './post.component';
+import {CreatePostComponent} from './create/create-post.component';
+import {EditorModule} from '@tinymce/tinymce-angular';
 import {TableModule} from 'primeng/table';
 import {CalendarModule} from 'primeng/calendar';
 import {SliderModule} from 'primeng/slider';
 import {DialogModule} from 'primeng/dialog';
 import {MultiSelectModule} from 'primeng/multiselect';
+import {ContextMenuModule} from 'primeng/contextmenu';
+import {DropdownModule} from 'primeng/dropdown';
 import {ButtonModule} from 'primeng/button';
 import {ToastModule} from 'primeng/toast';
 import {InputTextModule} from 'primeng/inputtext';
 import {ProgressBarModule} from 'primeng/progressbar';
-import {DropdownModule} from 'primeng/dropdown';
-import {HttpClientModule} from '@angular/common/http';
-import {ContextMenuModule} from 'primeng/contextmenu';
 import {FileUploadModule} from 'primeng/fileupload';
 import {ToolbarModule} from 'primeng/toolbar';
 import {RatingModule} from 'primeng/rating';
@@ -23,21 +24,27 @@ import {RadioButtonModule} from 'primeng/radiobutton';
 import {InputNumberModule} from 'primeng/inputnumber';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
 import {InputTextareaModule} from 'primeng/inputtextarea';
-import {ConfirmationService, MessageService} from 'primeng/api';
-
 
 @NgModule({
   declarations: [
-    ProductsComponent
+    PostComponent,
+    CreatePostComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forChild([{
-      path: '',
-      component: ProductsComponent
-    }]),
+    RouterModule.forChild([
+      {
+        path: '',
+        component: PostComponent
+      },
+      {
+        path: 'create',
+        component: CreatePostComponent
+      }
+    ]),
+    EditorModule,
     // primeng
     TableModule,
     CalendarModule,
@@ -59,10 +66,7 @@ import {ConfirmationService, MessageService} from 'primeng/api';
     ConfirmDialogModule,
     InputTextareaModule,
   ],
-  providers: [
-    MessageService,
-    ConfirmationService
-  ]
+  providers: []
 })
-export class ProductsModule {
+export class PostsModule {
 }

@@ -24,6 +24,7 @@
     "@ngx-formly/bootstrap": "^5.0.0",
     "@ngx-formly/core": "^5.0.0",
     "@ngx-formly/schematics": "^5.10.11",
+    "@tinymce/tinymce-angular": "^4.2.0",
     "firebase": "^8.2.2",
     "primeflex": "^2.0.0-rc.1",
     "primeicons": "^4.0.0",

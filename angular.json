@@ -284,5 +284,8 @@
       }
     }
   },
-  "defaultProject": "e-commerce-zzz"
+  "defaultProject": "e-commerce-zzz",
+  "cli": {
+    "analytics": false
+  }
 }
