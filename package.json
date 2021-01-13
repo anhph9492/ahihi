@@ -35,7 +35,7 @@
     "@ngx-loading-bar/core": "^5.1.0",
     "@ngx-loading-bar/http-client": "^5.1.0",
     "@ngx-loading-bar/router": "^5.1.0",
-    "feather-icons": "^4.26.0",
+    "feather-icons": "^4.28.0",
     "@ngx-translate/core": "^13.0.0",
     "animate.css": "^4.1.0",
     "ng-animate": "^0.3.4"
@@ -44,10 +44,11 @@
     "@angular-devkit/build-angular": "~0.1100.6",
     "@angular/cli": "~11.0.3",
     "@angular/compiler-cli": "~11.0.3",
+    "@types/feather-icons": "^4.7.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
-    "@types/feather-icons": "^4.7.0",
     "codelyzer": "^6.0.0",
+    "feather-icons": "^4.28.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.1.0",
@@ -59,7 +60,6 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2",
-    "feather-icons": "^4.26.0"
+    "typescript": "~4.0.2"
   }
 }
